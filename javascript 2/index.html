@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		
+		<title>autocomplete country script</title>
+
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />	
+		
+		<script type="text/javascript" language="javascript" src="js/AutoCountry.js"></script>
+		<script language="JavaScript" type="text/javascript">
+			window.onload = function() {
+				AC.init("countryField");
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			Страна:
+			<input onclick="multi();" type="text" id="countryField" />
+			<button onclick="show();">Выбрать</button>
+			<button onclick="multi2();">Выбрать еще</button>
+		</div>
+		<div class="container">
+			Добавить:
+			<input type="text" id="addCountry"/>
+			<button onclick="pushData();">Добавить</button>
+		</div>
+	</body>
+</html>
