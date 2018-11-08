@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add New Option</title>
+        <meta charset="windows-1252">
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+        <!-- <select id="select" multiple>
+            <option value="java">Java</option>
+            <option value="c#">C#</option>
+        </select>
+        <input type="text" id="val">
+        <button onclick="insertValue();">Add</button> -->
+
+        <div class ="autocomplete">
+            <input type="text" placeholder="Multiselect">
+            <span class="close">Cancel</span>
+            <div class="dialog">
+                
+            </div>
+        </div>
+
+        <!-- <script>
+            
+            function insertValue()
+            {
+                var select = document.getElementById("select"),
+                    txtVal = document.getElementById("val").value,
+                    newOption = document.createElement("OPTION"),
+                    newOptionVal = document.createTextNode(txtVal);
+             
+                newOption.appendChild(newOptionVal);
+                select.insertBefore(newOption,select.firstChild);
+            }
+            
+        </script> -->
+        <script src="./jquery-2.2.0.min.js"></script>
+        <script src="./index.js"></script>
+
+
+
+    </body>
+</html>
